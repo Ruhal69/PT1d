@@ -13,7 +13,7 @@ function loadCheckboxState(checkbox) {
     const checkboxId = checkbox.id;
     const storedState = localStorage.getItem(`checkbox-${checkboxId}`);
     if (storedState !== null) {
-        checkbox.checked = storedState === 'true';
+        checkbox.checked = storedState === 'true'; // Convert stored string to boolean
     }
 }
 
