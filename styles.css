@@ -37,12 +37,10 @@ h2 {
     flex-grow: 1;
 }
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
+/* Removed old float alignment, using flexbox instead */
+.container {
+    display: flex; /* Aligning sections in a row */
+    justify-content: space-between; /* Space between left and right sections */
 }
 
 table {
